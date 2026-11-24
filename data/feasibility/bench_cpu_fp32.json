@@ -1,0 +1,68 @@
+{
+  "mode": "cpu_fp32",
+  "device": "cpu",
+  "precision": "float32",
+  "offline_mode": true,
+  "hf_revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "t3_model": "t3_mtl23ls_v2.safetensors",
+  "supports_en": true,
+  "supports_hi": true,
+  "supported_language_count": 23,
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.6.0+cu124",
+    "torchaudio": "2.6.0+cu124",
+    "chatterbox-tts": "0.1.7",
+    "transformers": "5.2.0",
+    "diffusers": "0.29.0",
+    "safetensors": "0.5.3",
+    "numba": "0.68.1",
+    "numpy": "1.26.4",
+    "resemble-perth": "1.1.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_total_mb": 4095.5
+  },
+  "rss_before_mb": 780.1,
+  "sys_ram_before_mb": 1091.1,
+  "vram_before_mb": null,
+  "status": "ok",
+  "load_sec": 24.09,
+  "rss_after_load_mb": 4804.1,
+  "runs": {
+    "run1_en": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cpu_fp32_run1_en.wav",
+      "gen_sec": 35.94,
+      "audio_sec": 5.68,
+      "rtf": 6.33,
+      "rss_mb": 4869.8,
+      "peak_rss_mb": 6952.0
+    },
+    "run1_hi": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cpu_fp32_run1_hi.wav",
+      "gen_sec": 28.77,
+      "audio_sec": 4.24,
+      "rtf": 6.79,
+      "rss_mb": 4916.1,
+      "peak_rss_mb": 6952.0
+    },
+    "run2_en": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cpu_fp32_run2_en.wav",
+      "gen_sec": 37.22,
+      "audio_sec": 5.68,
+      "rtf": 6.55,
+      "rss_mb": 4923.4,
+      "peak_rss_mb": 6952.0
+    },
+    "run2_hi": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cpu_fp32_run2_hi.wav",
+      "gen_sec": 32.32,
+      "audio_sec": 3.96,
+      "rtf": 8.16,
+      "rss_mb": 4888.1,
+      "peak_rss_mb": 6952.0
+    }
+  },
+  "peak_rss_overall_mb": 6952.0,
+  "sys_ram_after_mb": 5201.8
+}

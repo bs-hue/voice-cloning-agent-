@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Node / Frontend
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Large ML checkpoints & downloads (exceed GitHub limits)
+data/cache/
+data/cache/**
+*.safetensors
+*.pth
+*.pt
+*.tar
+*.whl
+*.bin
+
+# Environment & temporary scratch scripts
+.env
+.env.local
+.env.*.local
+scratch/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db

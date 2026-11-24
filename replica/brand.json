@@ -1,0 +1,6 @@
+{
+  "avoid": ["VoiceStudio", "debpalash"],
+  "domains": ["voicestudio.sh", "app.voicestudio.sh"],
+  "colors": []
+}
+

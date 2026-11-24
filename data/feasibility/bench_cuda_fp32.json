@@ -1,0 +1,83 @@
+{
+  "mode": "cuda_fp32",
+  "device": "cuda",
+  "precision": "float32",
+  "offline_mode": true,
+  "hf_revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "t3_model": "t3_mtl23ls_v2.safetensors",
+  "supports_en": true,
+  "supports_hi": true,
+  "supported_language_count": 23,
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.6.0+cu124",
+    "torchaudio": "2.6.0+cu124",
+    "chatterbox-tts": "0.1.7",
+    "transformers": "5.2.0",
+    "diffusers": "0.29.0",
+    "safetensors": "0.5.3",
+    "numba": "0.68.1",
+    "numpy": "1.26.4",
+    "resemble-perth": "1.1.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_total_mb": 4095.5
+  },
+  "rss_before_mb": 777.2,
+  "sys_ram_before_mb": 1143.3,
+  "vram_before_mb": 406,
+  "status": "ok",
+  "load_sec": 24.65,
+  "rss_after_load_mb": 1879.9,
+  "load_peak_alloc_mb": 3074.8,
+  "load_peak_reserved_mb": 3094.0,
+  "vram_after_load_mb": 3559,
+  "runs": {
+    "run1_en": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cuda_fp32_run1_en.wav",
+      "gen_sec": 21.19,
+      "audio_sec": 5.76,
+      "rtf": 3.68,
+      "rss_mb": 2482.6,
+      "peak_rss_mb": 4981.5,
+      "peak_alloc_mb": 3462.8,
+      "peak_reserved_mb": 3618.0,
+      "nvidia_smi_used_mb": 3948
+    },
+    "run1_hi": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cuda_fp32_run1_hi.wav",
+      "gen_sec": 16.55,
+      "audio_sec": 4.48,
+      "rtf": 3.69,
+      "rss_mb": 2483.3,
+      "peak_rss_mb": 4981.5,
+      "peak_alloc_mb": 3590.8,
+      "peak_reserved_mb": 3646.0,
+      "nvidia_smi_used_mb": 3924
+    },
+    "run2_en": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cuda_fp32_run2_en.wav",
+      "gen_sec": 44.88,
+      "audio_sec": 5.68,
+      "rtf": 7.9,
+      "rss_mb": 2491.6,
+      "peak_rss_mb": 4981.5,
+      "peak_alloc_mb": 3592.4,
+      "peak_reserved_mb": 3646.0,
+      "nvidia_smi_used_mb": 3928
+    },
+    "run2_hi": {
+      "file": "/mnt/e/Antigravity project/voice cloning agent/data/feasibility/stage1_cuda_fp32_run2_hi.wav",
+      "gen_sec": 35.0,
+      "audio_sec": 4.8,
+      "rtf": 7.29,
+      "rss_mb": 2492.4,
+      "peak_rss_mb": 4981.5,
+      "peak_alloc_mb": 3592.1,
+      "peak_reserved_mb": 3672.0,
+      "nvidia_smi_used_mb": 3955
+    }
+  },
+  "peak_rss_overall_mb": 4981.5,
+  "sys_ram_after_mb": 2639.9
+}

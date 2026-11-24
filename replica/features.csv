@@ -1,0 +1,19 @@
+feature,area,priority,original,clone,notes
+Enter text and generate real speech locally,tts,must,yes,yes,Wired to pinned V2 ChatterboxMultilingualTTS (float32) in apps/api/engine.py
+Select English or Hindi output language,tts,must,yes,yes,LanguageToggle en/hi on Studio S01
+Upload an authorized reference recording for voice cloning,cloning,must,yes,yes,AudioDropzone + ffmpeg/soundfile 24 kHz WAV normalization in Voice Profiles S02
+Explicit speaker authorization confirmation before saving clone,safety,must,yes,yes,Required checkbox + consent note enforced by backend 400 validation
+Save and list reusable voice profiles,profiles,must,yes,yes,Persisted in SQLite voice_profiles on E:
+Delete saved voice profiles,profiles,must,yes,yes,Two-step delete confirmation + WAV removal
+In-app audio playback with seek and duration,audio,must,yes,yes,AudioPlayer on Studio S01 Voice Profiles S02 and History S03
+Download generated speech as WAV file,audio,must,yes,yes,Download WAV via ?download=1 attachment endpoint
+Persistent local generation history with replay and delete,history,must,yes,yes,Persisted in SQLite generation_jobs on E:
+Clear step-by-step progress indicators during model load and synthesis,ux,must,yes,yes,ProgressBanner backed by SSE events and fallback polling
+Plain-English error messages and CPU fallback support,reliability,must,yes,yes,CPU float32 is the default; plain-English validation and runtime errors
+Search and language filter in generation history,history,should,yes,yes,Search input + All/English/Hindi filter in History S03
+Hardware and E: storage status check with device mode toggle,setup,should,yes,yes,Live telemetry Stage 1 table and device settings on Engine & Storage S04
+Local transcription of audio files,transcription,could,yes,skip,Deferred to Phase 2
+Video translation and dubbing,dubbing,could,yes,skip,Deferred beyond v1
+Text-prompt Voice Design,voice design,could,yes,skip,Deferred beyond v1
+Mobile apps (iOS / Android),mobile,could,yes,skip,Deferred beyond v1
+Cloud accounts subscriptions and multi-user hosting,cloud,could,yes,skip,Single-user local v1 only
